@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "electron": "7.2.1",
-    "electron-builder": "^21.2.0"
+    "electron-builder": "^22.2.0"
   },
   "dependencies": {
     "electron-log": "^1.3.0",
