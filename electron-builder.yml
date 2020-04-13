@@ -3,7 +3,7 @@
 # doc: https://www.electron.build/configuration/configuration
 
 ### Global configuration
-appId: com.github.dkapanidis.electronupdaterexample
+appId: com.github.dkapanidis.electronupdaterexampleaa
 #afterSign: "scripts/notarize.js"
 extraMetadata:
   main: main.js
@@ -31,7 +31,7 @@ mac:
   # entitlements: "build/entitlements.mac.plist"
   # entitlementsInherit: "build/entitlements.mac.plist"
   # icon: "public/icon.icns"
-  # category: "public.app-category.developer-tools"
+  category: "public.app-category.developer-tools"
   target:
     - "zip"
     - "dmg"
