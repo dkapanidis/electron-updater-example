@@ -1,0 +1,44 @@
+# Electron Builder configuration
+#
+# doc: https://www.electron.build/configuration/configuration
+
+### Global configuration
+appId: com.github.dkapanidis.electronupdaterexample
+#afterSign: "scripts/notarize.js"
+extraMetadata:
+  main: main.js
+# files:
+#   - "src/**/*"
+#   - "public/**/*"
+#   - "node_modules/kubernetic-frontend/build/**/*"
+#   - "node_modules/**/*"
+# extraFiles:
+#   - from: "resources/${os}"
+#     to: "Resources/bin"
+#     filter:
+#       - "**/*"
+# directories:
+#   buildResources: "assets"
+## Publish to S3
+publish:
+  provider: s3
+  bucket: kubenetic-test
+
+### OS specific configuration
+mac:
+  # hardenedRuntime: true
+  # gatekeeperAssess: false
+  # entitlements: "build/entitlements.mac.plist"
+  # entitlementsInherit: "build/entitlements.mac.plist"
+  # icon: "public/icon.icns"
+  # category: "public.app-category.developer-tools"
+  target:
+    - "zip"
+    - "dmg"
+win:
+  # icon: "public/icon.ico"
+linux:
+  target:
+    - "tar.gz"
+nsis:
+  perMachine: true
