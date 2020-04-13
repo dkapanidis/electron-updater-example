@@ -35,10 +35,10 @@ mac:
   target:
     - "zip"
     - "dmg"
-win:
+#win:
   # icon: "public/icon.ico"
-linux:
-  target:
-    - "tar.gz"
-nsis:
-  perMachine: true
+#linux:
+#  target:
+#    - "tar.gz"
+#nsis:
+#  perMachine: true
